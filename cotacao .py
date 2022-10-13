@@ -1,28 +1,8 @@
-# Automação Web e Busca de Informações com Python
-'''
-Trabalhamos em uma importadora e o preço dos nossos produtos é vinculado a cotação de:\n",
-- Dólar
-- Euro
-- Ouro
-
-Precisamos pegar na internet, de forma automática, a cotação
-desses 3 itens e saber quanto devemos cobrar pelos nossos
-produtos, considerando uma margem de contribuição que temos
-na nossa base de dados.
-
-Base de Dados: https://drive.google.com/drive/folders/1KmAdo593nD8J9QBaZxPOG1yxHZua4Rtv?usp=sharing
-
-Para isso, vamos criar uma automação web:
-
-- Usaremos o selenium
-- Importante: baixar o webdriver
-'''
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Chrome(executable_path="C:/Users/User/Desktop/chromedriver.exe")
 # caso queira deixar na mesma pasta do seu código
 # navegador = webdriver.Chrome(\"chromedriver.exe\")
 
